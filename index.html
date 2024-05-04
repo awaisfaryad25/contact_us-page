@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="component-breadcrumb.css">
+  <link rel="stylesheet" href="contact-form.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+    <symbol id="arrowRight">
+      <path
+        d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+        fill="currentColor" />
+    </symbol>
+    <symbol id="arrow-right-wide">
+      <path
+        d="M37.7071 8.70711C38.0976 8.31658 38.0976 7.68342 37.7071 7.29289L31.3431 0.928932C30.9526 0.538408 30.3195 0.538408 29.9289 0.928932C29.5384 1.31946 29.5384 1.95262 29.9289 2.34315L35.5858 8L29.9289 13.6569C29.5384 14.0474 29.5384 14.6805 29.9289 15.0711C30.3195 15.4616 30.9526 15.4616 31.3431 15.0711L37.7071 8.70711ZM0 9H37V7H0V9Z"
+        fill="currentColor" />
+    </symbol>
+  </svg>
+  <section class="main-page global-block --align-center">
+    <nav class="breadcrumb-nav">
+      <div class="container">
+        <ul class="breadcrumb-list list-unstyled">
+          <li class="breadcrumb-list_item">
+            <a class="breadcrumb-list_link" href="#">Home</a>
+          </li>
+          <li class="breadcrumb-list_item">
+            <span class="breadcrumb-list_link">Contact Us</span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-page_wrapper">
+      <div class="container">
+        <h1 class="main-page_heading h2 mty">Get In Touch Anytime</h1>
+        <p>Please fill out the form below with your questions or comments. We value your feedback and aim to respond
+          within 24 hours. Your satisfaction is our priority.</p>
+      </div>
+    </div>
+  </section>
+  <section class="contact-form global-block">
+    <div class="container">
+      <div class="contact-form_wrapper">
+        <div class="contact-form_col contact-form_col--form">
+          <div class="form-wrapper">
+            <h3 class="form-wrapper_heading h5 mty">Leave you Request</h3>
+            <div class="form-wrapper_description text-size--large mty">
+              <p>Your email address will not be published. Required fields are marked *.</p>
+            </div>
+            <form action="#">
+              <div class="form-group">`
+                <label for="contact-name">Name*</label>
+                <input type="text" id="contact-name" name="contact[Name]" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="contact-email">E-mail*</label>
+                <input type="email" id="contact-email" name="contact[email]" placeholder="E-mail Address">
+              </div>
+              <div class="form-group">
+                <label for="contact-textarea">Your Request *</label>
+                <textarea name="contact[textarea]" id="contact-textarea" placeholder="Your Request"></textarea>
+              </div>
+              <div class="form-wrapper_btn-wrap">
+                <button type="button" class="button button--primary form-wrapper_button">
+                  <svg width="30" height="15" viewBox="0 0 24 20">
+                    <use href="#arrowRight"></use>
+                  </svg>
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="contact-form_col contact-form_col--widgets">
+          <div class="card card--primary --align-center">
+            <ul class="list-unstyled avatar-list --justify-self">
+              <li class="avatar-list_item">
+                <div class="avatar-list_img">
+                  <img class="object-fit object-fit--absolute" src="img/ellipse-51.png" alt="">
+                </div>
+              </li>
+              <li class="avatar-list_item">
+                <div class="avatar-list_img">
+                  <img class="object-fit object-fit--absolute" src="img/ellipse-52.png" alt="">
+                </div>
+              </li>
+              <li class="avatar-list_item">
+                <div class="avatar-list_img avatar-list_img--active">
+                  <img class="object-fit object-fit--absolute" src="img/ellipse-53.png" alt="">
+                </div>
+              </li>
+            </ul>
+            <div class="card_description">
+              <h3 class="card_heading  h5 mty">Haven't Answered Your Question?</h3>
+              <address class="card_address text-size--large">
+                <p>Our customer support is available Monday to Friday: 11am-7pm.</p>
+                <p>We can help answer any questions about our products, shipping, or anything else on your mind!</p>
+                <p><strong>Call Us:</strong><a class="card_conatct" href="#"> 818-777-5577</a></p>
+                <p><strong>Visit Us:</strong> 1557 S McCarran Blvd New York,NY 21212</p>
+              </address>
+            </div>
+          </div>
+          <a class="card card--secondary" href="#">
+            <div class="card_header-wrap">
+              <div class="card_title-wrap">
+                <div class="card_img">
+                  <img class="object-fit object-fit--absolute" src="img/perfil-story.png" alt="">
+                </div>
+                <h4 class="card_title mty">
+                  <strong class="card_mention">@Urbandén</strong>
+                  <span class="card_counting text-size--large">150K followers</span>
+                </h4>
+              </div>
+            </div>
+            <div class="card_inspir-block">
+              <h3 class="card_sub-heading h5 mty">
+                <span class="card_inspiration">Our Inspiration:</span>
+                <span class="card_moments">Capturing Life's Moments</span>
+              </h3>
+              <i class="card_heading-icn">
+                <svg width="38" height="16" viewBox="0 0 38 16">
+                  <use href="#arrow-right-wide"></use>
+                </svg>
+              </i>
+            </div>
+            <span class="card_bg">
+              <img class="object-fit object-fit--absolute" src="img/udInspiration.png" alt="">
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+.main-page .main-page_wrapper {
+  padding-top: var(--section-padding-top, 10px);
+  padding-bottom: var(--section-padding-bottom, 10px);
+}
+
+.form-wrapper .form-group {
+  margin-bottom: 15px;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.form-wrapper_button {
+  width: 100%;
+}
+
+.contact-form_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.contact-form_col--widgets {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form_col--form {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.form-wrapper_heading {
+  --mt-bottom: 10px;
+}
+
+.form-wrapper_description {
+  margin-bottom: 25px;
+}
+
+.card {
+  padding: 15px;
+  border-radius: var(--section-radius, 10px);
+  color: var(--section-primary-text-color, #fff);
+}
+
+.card--primary {
+  background-color: var(--section-primary-bg, #000);
+}
+
+.avatar-list {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.avatar-list_item {
+  position: relative;
+  margin-left: -18px;
+}
+
+.avatar-list_img {
+  width: 70px;
+  height: 70px;
+}
+
+.avatar-list_img::after {
+  display: none;
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--section-alternative-color, #fff);
+  background-color: var(--section-secondary-bg, #40D869);
+  border-radius: var(--section-radius, 67px);
+}
+
+.card_mention,
+.card_inspiration,
+.avatar-list_img--active::after {
+  display: block;
+}
+
+.card_heading,
+.card_sub-heading,
+.card_title {
+  color: inherit;
+}
+
+.card_heading,
+.card_sub-heading,
+.form-wrapper_heading {
+  font-weight: 500;
+}
+
+.card_heading {
+  --mt-bottom: 20px;
+}
+
+.card_address {
+  font-style: normal;
+}
+
+.card_address p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card_address p+p {
+  margin-top: 40px;
+}
+
+.card_conatct{
+  text-decoration: none;
+}
+
+.card--secondary {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  text-decoration: none;
+  position: relative;
+  min-height: 376px;
+}
+
+.card--secondary:hover {
+  --section-active-hover-color: #fff;
+}
+
+.card_mention {
+  font-weight: var(--headings-font-weight, 400);
+}
+
+.card_img {
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+
+.card_bg img {
+  z-index: -1;
+  border-radius: var(--section-radius, 10px);
+}
+
+.card_header-wrap {
+  flex-grow: 1;
+}
+
+.card_title-wrap{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.card_inspir-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.card_heading-icn {
+  padding-top: 30px;
+}
+
+@media (min-width:768px) {
+  .main-page .main-page_wrapper {
+    padding-top: var(--section-padding-top, 30px);
+    padding-bottom: var(--section-padding-bottom, 30px);
+  }
+
+  .contact-form_col--widgets {
+    width: 45%;
+  }
+
+  .card--primary {
+    padding: 60px 80px;
+  }
+
+  .card--secondary {
+    padding: 45px 55px;
+  }
+}
